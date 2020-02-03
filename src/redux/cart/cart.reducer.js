@@ -22,7 +22,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         }
         case CartActionType.REMOVE_ITEM: {
             return {
-                ... state,
+                ...state,
                 cartItems: removeItemFromCart(state.cartItems, action.payload)
             }
         }
